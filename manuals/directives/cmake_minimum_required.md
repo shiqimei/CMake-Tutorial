@@ -65,4 +65,4 @@ message("Project Description: " ${PROJECT_DESCRIPTION})
 message("Project Homepage: " ${PROJECT_HOMEPAGE_URL})
 ````
 
-<p style="text-align:center;"><a href="https://github.com/lolimay/CMake-Tutorial/blob/master/demos/directives/project_1/CMakeLists.txt"><img src="https://github.com/favicon.ico" style="vertical-align:center;height:16px;"> <span style="">源代码地址</span></a></p>
+<p align="center"><a href="https://github.com/lolimay/CMake-Tutorial/blob/master/demos/directives/project_1/CMakeLists.txt"><img src="https://github.com/favicon.ico" height="16"> 源代码地址</a></p>
