@@ -17,11 +17,6 @@ cmake_minimum_required(VERSION 3.7)
 cmake_minimum_required(VERSION 3.11.2)
 ````
 
-## 相关关键字
-- PROJECT_NAME 当前项目名称
-- PROJECT_NAME 根项目名称
-- 
-
 ## 备注
 1. `<major>[.<minor>[.<patch>]]` 表示小版本号(patch)可以单独省略，但当次版本号(minor)省略时小版本号(patch)也要同时省略，主版本号(major)不能省略。
 2. 其实还有更小的版本号叫 tweak，但 CMake 的版本号最多只有 3 位，所以上面就没有写成 `<major>[.<minor>[.<patch>[.<tweak>]]]]` 了。
