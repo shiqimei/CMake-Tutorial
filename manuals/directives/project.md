@@ -10,21 +10,21 @@ project(<PROJECT-NAME>
         [LANGUAGES <language-name>...])
 ````
 ## 相关关键字
-- PROJECT_NAME 当前项目名称
-- PROJECT_SOURCE_DIR 项目源代码路径
-- PROJECT_BINARY_DIR 项目二进制文件路径
-- PROJECT_VERSION 项目版本号
-- PROJECT_VERSION_MAJOR 项目主版本号
-- PROJECT_VERSION_MINOR 项目次版本号
-- PROJECT_VERSION_PATCH 项目小版本号
-- PROJECT_VERSION_TWEAK 项目末版本号
-- PROJECT_DESCRIPTION 项目描述
-- PROJECT_HOMEPAGE_URL 项目主页地址
-- CMAKE_PROJECT_\<PROJECT-NAME\>_INCLUDE 包含上一层目录
-- CMAKE_PROJECT_NAME 根项目名称
-- CMAKE_PROJECT_VERSION 根项目名称
-- CMAKE_PROJECT_DESCRIPTION 根项目描述
-- CMAKE_PROJECT_HOMEPAGE_URL 根项目主页地址
+- PROJECT_NAME `当前项目名称`
+- PROJECT_SOURCE_DIR `项目源代码路径`
+- PROJECT_BINARY_DIR `项目二进制文件路径`
+- PROJECT_VERSION `项目版本号`
+- PROJECT_VERSION_MAJOR `项目主版本号`
+- PROJECT_VERSION_MINOR `项目次版本号`
+- PROJECT_VERSION_PATCH `项目小版本号`
+- PROJECT_VERSION_TWEAK `项目末版本号`
+- PROJECT_DESCRIPTION `项目描述`
+- PROJECT_HOMEPAGE_URL `项目主页地址`
+- CMAKE_PROJECT_\<PROJECT-NAME\>_INCLUDE `包含上一层目录`
+- CMAKE_PROJECT_NAME `根项目名称`
+- CMAKE_PROJECT_VERSION `根项目名称`
+- CMAKE_PROJECT_DESCRIPTION `根项目描述`
+- CMAKE_PROJECT_HOMEPAGE_URL `根项目主页地址`
 
 ## 备注
 1. CMake 默认认为当前项目所用的编程语言是 `C/C++` ，此时 LANGUAGES 参数项可以缺省不填。当使用 CMake 去构建其它项目时(如汇编 `ASM`、`CUDA` 等)，需要指定LANGUAGES 参数项。
@@ -50,6 +50,8 @@ project(
 )
 # 备注:
 # 1. 项目名中间不能有空格，不同单词之间可以使用下划线连接
+#    若项目名中有空格请用双引号包裹起来，如 project("Hello World")
+#    不过不建议这样做
 
 # 输出调试信息
 message("Project Name: " ${PROJECT_NAME})

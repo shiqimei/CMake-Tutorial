@@ -13,6 +13,8 @@ project(
 )
 # 备注:
 # 1. 项目名中间不能有空格，不同单词之间可以使用下划线连接
+#    若项目名中有空格请用双引号包裹起来，如 project("Hello World")
+#    不过不建议这样做
 
 # 输出调试信息
 message("Project Name: " ${PROJECT_NAME})
