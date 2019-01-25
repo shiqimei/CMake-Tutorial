@@ -14,3 +14,4 @@ git clone git@github.com:lolimay/CMake-Tutorial.git
 2. [CMake Documentation - Official](https://cmake.org/cmake/help/latest/index.html)
 3. [CMake实践.pdf](./resources/CMake_Practice.pdf)
 4. [CMake 入门实战 - HaHack](https://www.hahack.com/codes/cmake/#stq=&stp=0)
+
