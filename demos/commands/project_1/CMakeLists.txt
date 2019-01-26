@@ -5,16 +5,12 @@ cmake_minimum_required(VERSION 3.13.3)
 
 # 设置项目基本信息
 project(
-    CMake_Tutorial
+    "CMake Tutorial"
     VERSION 1.3.0
     DESCRIPTION "an awesome Chinese CMake tutorial!"
     HOMEPAGE_URL "https://github.com/lolimay/CMake-Tutorial"
     LANGUAGES ASM                                                                                                                                                                                                                                               
 )
-# 备注:
-# 1. 项目名中间不能有空格，不同单词之间可以使用下划线连接
-#    若项目名中有空格请用双引号包裹起来，如 project("Hello World")
-#    不过不建议这样做
 
 # 输出调试信息
 message("Project Name: " ${PROJECT_NAME})

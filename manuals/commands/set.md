@@ -17,7 +17,7 @@ set(<variable> <value1> <value2> ...)
     install(TARGETS ${PROJECT_NAME} DESTINATION bin)
     ````
     我们项目经过构建最终生成的二进制文件就会被安装到 `/usr/local/bin` 目录下。
-
+- CMAKE_EXPORT_COMPILE_COMMANDS `是否导出编译过程到 compile_commands.json 文件中`
 ### Qt 变量
 Qt 是一个强大的 C++ 跨平台界面开发框架。Qt 在构建其项目时主要有 3 步预处理工作: moc、rcc 和 uic。首先，从 Qt 继承而来的类中只要使用了 Q_OBJECT 宏，都必须使用 moc 工具将其预处理成对应的 moc 文件。其次，Qt 的界面文件是 `*.ui`，在构建过程中，Qt 则会使用 uic 工具将其预处理成对应的头文件 `ui_*.h`。最后，Qt 还需要使用 rcc 工具处理它的资源文件 *.qrc，将其编译成对应的源代码文件 `qrc_*.cpp` 或独立的二进制资源文件 `*.rcc`。
 
