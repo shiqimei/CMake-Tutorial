@@ -5,4 +5,6 @@ project(find_package)
 set(CMAKE_EXPORT_COMPILE_COMMANDS 0)
 
 find_package(PkgConfig REQUIRED)
-message(${PkgConfig_FOUND})
+message("PkgConfig_FOUND: " ${PkgConfig_FOUND})
+
+find_package(OpenCV REQUIRED)
